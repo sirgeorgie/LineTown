@@ -1,7 +1,7 @@
 ## Working with LineTownElection in your IDE
 
 ## Running LineTownElection locally
-LineTownElection is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a jar file and run it from the command line (it should work just as well with Java 11 or newer):
+LineTownElection is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Gradle](https://spring.io/guides/gs/gradle/). You can build a jar file and run it from the command line (it should work just as well with Java 8 or newer):
 
 ```
 git clone https://github.com/sirgeorgie/LineTown.git

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+    <menu id="application" caption="msg://com.company.linetownelection/menu.application" insertBefore="administration">
+        <item screen="User.browse" caption="msg://com.company.linetownelection.screen.user/UserBrowse.caption"/>
+        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+        <item screen="Vote.browse" caption="msg://com.company.linetownelection.screen.vote/voteBrowse.menu"/>
+        <item screen="ToggleElection.browse"
+              caption="msg://com.company.linetownelection.screen.toggleelection/toggleElectionBrowse.menu"/>
+        <item screen="Candidates.browse"
+              caption="msg://com.company.linetownelection.screen.candidates/candidatesBrowse.menu"/>
+    </menu>
+
+</menu-config>

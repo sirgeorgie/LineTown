@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="LineTownElection">
+        <createTable tableName="CANDIDATES">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_CANDIDATES"/>
+            </column>
+            <column name="NAME" type="VARCHAR(255)"/>
+            <column name="DOB" type="VARCHAR(255)"/>
+            <column name="BIO_LINK" type="VARCHAR(255)"/>
+            <column name="IMAGE_LINK" type="VARCHAR(255)"/>
+            <column name="POLICY" type="VARCHAR(255)"/>
+            <column name="VOTED_COUNT" type="INT"/>
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="LineTownElection">
+        <createTable tableName="TOGGLE_ELECTION">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_TOGGLE_ELECTION"/>
+            </column>
+            <column name="ENABLE" type="BOOLEAN"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="3" author="LineTownElection">
+        <createTable tableName="VOTE">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_VOTE"/>
+            </column>
+            <column name="NATIONAL_ID" type="VARCHAR(255)"/>
+            <column name="CANDIDATE_ID" type="VARCHAR(255)"/>
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="DATETIME"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="DATETIME"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

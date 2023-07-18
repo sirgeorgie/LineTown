@@ -1,6 +1,6 @@
 FROM amazoncorretto:11-al2-jdk as build
 WORKDIR /
-ADD . .
+COPY .
 # download dependencies
 RUN ./gradlew bootJar
 RUN mv /build/libs/linetownelection-0.0.1-SNAPSHOT.jar /linetownelection.jar

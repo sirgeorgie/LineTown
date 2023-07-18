@@ -17,4 +17,4 @@ WORKDIR /
 COPY --from=build linetownelection.jar /opt/linetownelection.jar
 EXPOSE 8080
 USER $SERVICE_NAME
-CMD java $JAVA_OPTS -jar /opt/linetownelection.jar
+CMD ["java","$JAVA_OPTS -jar /opt/linetownelection.jar"]

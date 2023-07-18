@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk as build
+FROM amazoncorretto:11-al2-jdk as build
 WORKDIR /
 ADD . .
 # download dependencies
@@ -6,7 +6,7 @@ RUN ./gradlew bootJar
 RUN mv /build/libs/linetownelection-0.0.1-SNAPSHOT.jar /linetownelection.jar
 
 
-FROM openjdk:8-jre
+FROM amazoncorretto:11
 ENV SERVICE_NAME="my-service"
 
 RUN addgroup --gid 1001 -S $SERVICE_NAME && \

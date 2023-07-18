@@ -1,4 +1,4 @@
-FROM openjdk:8u322-jdk as build
+FROM openjdk:8-jdk as build
 WORKDIR /
 ADD . .
 # download dependencies

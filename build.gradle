@@ -44,7 +44,7 @@ dependencies {
     implementation("io.jmix.rest:jmix-rest-starter")
     implementation group: 'org.json', name: 'json', version: '20230227'
 
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.google.code.gson:gson:2.11.0")
     implementation group: 'com.opencsv', name: 'opencsv', version: '5.7.1'
 
     implementation group: 'org.springframework', name: 'spring-messaging', version: '6.0.11'
